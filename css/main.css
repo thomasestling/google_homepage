@@ -1,0 +1,147 @@
+/* CSS Styles */
+html {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: #ffffff;
+    color: rgb(169, 166, 161);
+    font-size: 14px;
+    font-family:arial, sans-serif;
+    height: 100%;
+    min-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.body-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.nav-bar {
+    height: 60px;
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    box-sizing: border-box;
+}
+
+.logo-container {
+    height: 50%;
+    max-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    object-position: center bottom;
+    justify-content: end;
+    flex-shrink: 0;
+}
+
+.logo {
+    height: 92px;
+    width: 1fr;
+    display: flex;
+    align-items: center;
+    object-position: center bottom;
+}
+
+.alphabet {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    object-position: center bottom;
+    width: auto;
+    }
+
+}
+
+.form-container {
+    height: 50%;
+    max-height: 420px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.form {
+    height: 160px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 20px;
+    justify-content: center;
+}
+
+.searchbar {
+    width: auto;
+    max-width: 548px;
+    border: 1px solid #dfe1e5;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-space {
+    height: 376px;
+    width: 1fr;
+
+}
+
+footer {
+    height: 93px;
+    width: 1fr;
+}
+
+a {
+    color: currentcolor;
+    padding: 8px;
+
+}
+
+a:hover {
+    text-decoration-color: currentcolor;
+    text-decoration: underline;
+}
+
+.apps {
+    display: inline-block;
+    box-sizing: content-box;
+    display: inline-block;
+    padding: 4px;
+}
+
+.apps{
+    height: 40px;
+    width: 40px;
+    box-sizing: border-box;
+}
+
+.svg {
+    height: 24px;
+    width: 24px;
+    box-sizing: border-box;
+}
+
+.profile {
+    border-radius: 50%;
+}

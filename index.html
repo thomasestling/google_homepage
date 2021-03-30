@@ -1,100 +1,14 @@
 <!DOCTYPE html>
-<html>
-<!----------------------------------------------Beginning of Head----------------------------------------------------------------------------------------------->
+<html lang="en">
+<!--Beginning of Head----->
 <head>
-    <style>
-        
-        body {
-            background-color: #ffffff;
-            color: rgb(169, 166, 161);
-            font-size: 14px;
-            font-family:arial, sans-serif;
-            height: 100%;
-            min-width: 400px;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-        }
-
-        .nav-bar {
-            height: 60px;
-            padding: 6px;
-            display: flex;
-            align-items: center;
-            flex-shrink: 0;
-            box-sizing: border-box;
-        }
-
-        .logo {
-            height: 420px;
-            width: 1fr;
-            display: grid;
-            grid-template-rows: 5;
-            grid-template-columns: 3;   
-            align-items: center;
-        }
-
-        .alphabet {
-            display:grid;
-            grid-row: 4 / 5;
-            grid-column: 2 / 3;
-
-        }
-
-        .form {
-            height: 140px;
-            width: 1fr;
-        }
-
-        .bottom-space {
-            height: 376px;
-            width: 1fr;
-
-        }
-
-        footer {
-            height: 93px;
-            width: 1fr;
-
-        }
-
-        a {
-            color: currentcolor;
-            padding: 8px;
-
-        }
-        a:hover {
-            text-decoration-color: currentcolor;
-            text-decoration: underline;
-        }
-
-        .apps {
-            display: inline-block;
-            box-sizing: content-box;
-            display: inline-block;
-            padding: 4px;
-        }
-        
-        .apps{
-            height: 40px;
-            width: 40px;
-            box-sizing: border-box;
-        }
-        
-        .svg {
-            height: 24px;
-            width: 24px;
-            box-sizing: border-box;
-        }
-
-        .profile {
-            border-radius: 50%;
-        }
-
-    </style>    
+    <!-- Style Sheets -->>
+    <link href="css/main.css" rel="stylesheet" type="text/css" media="all"/>
+    <meta charset="UTF-8">
+    <title>Google Clone</title> 
 </head>
-<!----------------------------------------------End of Head----------------------------------------------------------------------------------------------------->
-<!----------------------------------------------Beginning of Body----------------------------------------------------------------------------------------------->
+<!--End of Head----------->
+<!--Beginning of Body----->
 <body>
     <div class="body-container">
         <header class="nav-bar">
@@ -107,22 +21,29 @@
             <div id="nav3">
                 <a class="gmail" href="https://mail.google.com/mail/&amp;ogbl" target="_top">Gmail</a>
             </div>
-            <div>
+            <div id="nav4">
                 <a class="images" href="https://www.google.com/imghp?hl=en&amp;ogbl" target="_top">Images</a>
             </div>
             <div id="nav5">            
                 <a class="apps" aria-label="Google apps" href="https://www.google.com/intl/en/about/products" role="button" tabindex="0"><svg id="svg" focusable="false" viewBox="0 0 24 24"><path d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"></path></svg></a>
             </div>
             <div id="nav6">
-                <a class="profile" href="https://accounts.google.com/SignOutOptions?hl=en&amp;continue=https://www.google.com/" role="button" tabindex="0" aria-expanded="false"><img class="profile" src="https://lh3.googleusercontent.com/ogw/ADGmqu_nMPWvJD5FzZdK3FgEZchyFq4jSxt9CNGdBt_n=s32-c-mo" srcset="https://lh3.googleusercontent.com/ogw/ADGmqu_nMPWvJD5FzZdK3FgEZchyFq4jSxt9CNGdBt_n=s32-c-mo 1x, https://lh3.googleusercontent.com/ogw/ADGmqu_nMPWvJD5FzZdK3FgEZchyFq4jSxt9CNGdBt_n=s64-c-mo 2x " alt="" aria-hidden="true" data-noaft="" data-atf="1"></a>
-            </div>
+                <a class="profile" href="https://accounts.google.com/SignOutOptions?hl=en&amp;continue=https://www.google.com/" role="button" tabindex="0" aria-expanded="false"><img class="profile" src="images/my_profile.jpg"></a>
             </header>
         <main>
-            <div class="logo">
-                <img class="alphabet" src="images/googlelogo_color_272x92dp.png">
+            <div class="logo-container">
+                <div class="logo">
+                    <img class="alphabet" src="images/googlelogo_color_272x92dp.png">
+                </div>
             </div>
-            <div class="form">
-                <form action="/search" method="GET" role="search"></form>
+            <div class="form-container">   
+                <div class="form">
+                    <div class="searchbar">
+                        <form action="/search" method="GET" role="search">
+                            <input class="search-text"  maxlength="2048" name="input-search" type="text" autofocus="" role="combobox" title="Search" value="">
+                        </form>
+                    </div>
+                </div>
             </div>
             <div class="bottom-space">
             </div>
@@ -134,5 +55,5 @@
 
 
 </body>
-<!----------------------------------------------End of Body----------------------------------------------------------------------------------------------------->
+<!--End of Body----------->
 </html>
