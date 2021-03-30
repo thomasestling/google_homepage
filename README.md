@@ -1,0 +1,1 @@
+A project clone of the Google.com homepage for The Odin Project fundamentals course.
