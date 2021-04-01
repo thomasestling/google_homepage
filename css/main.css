@@ -42,6 +42,8 @@ header {
     flex-shrink: 0;
     box-sizing: border-box;
     width: 100%;
+    color: #222;
+    font-size: 14px;
 }
 
 .spacer {
@@ -51,8 +53,6 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
-
-
 
 .apps {
     display: inline-block;
@@ -138,6 +138,7 @@ header {
     display: flex;
     flex-direction: row;
     width: 67%;
+    max-width: 600px;
     padding-bottom: 6px;
     box-sizing: border-box;
     align-items: center;
@@ -150,6 +151,7 @@ header {
     flex-grow: 1;
     flex-shrink:1;
     border: 0px;
+    outline: none;
 }
 
 .mic {
